@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B. Viknesh -- Portfolio</title>
+  <style>
+    /* Pink & Purple Theme */
+    body {
+      background: linear-gradient(135deg, #8e2de2 0%, #c471ed 50%, #f64f59 100%);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    /* Container with glass effect */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      color: #f5eaff;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      border: 5px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+      background: linear-gradient(90deg, #ffb6f2, #da70d6, #ff80ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #ffe6ff;
+      font-size: 1.15em;
+    }
+
+    /* Section */
+    section {
+      margin: 36px 0;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      margin-bottom: 16px;
+      background: linear-gradient(90deg, #ffb6f2, #da70d6, #ff80ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Skills */
+    ul.skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.skills li {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-weight: 500;
+      font-size: 1em;
+      list-style: none;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    ul.skills li:hover {
+      background: linear-gradient(90deg, #ff80ff, #da70d6, #ffb6f2);
+      color: #000;
+      transform: translateY(-3px);
+    }
+
+    /* Projects grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      background: linear-gradient(135deg, #ff00cc60, #80008060, #ff66cc60);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    /* Add Project Button */
+    .add-project {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 12px 20px;
+      border-radius: 30px;
+      background: linear-gradient(135deg,#ff80ff,#da70d6,#ff4da6);
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      transition: 0.3s ease;
+    }
+
+    .add-project:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+
+    .add-project span {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+
+    /* Contact */
+    ul.contact-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.contact-list li {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      font-size: 1em;
+      font-weight: 500;
+    }
+
+    a {
+      color: #ffe6ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      background: linear-gradient(90deg,#800080,#da70d6,#ff1493);
+      padding: 22px;
+      color: #fff;
+      border-radius: 0 0 24px 24px;
+      font-weight: 500;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="profile-photo">
+        <img src=" https://i.postimg.cc/D070Gmfx/IMG-20250825-WA0006.jpg" alt="B. Viknesh Profile Photo">
+      </div>
+      <h1>B. Viknesh</h1>
+      <p class="tagline">Web Designer • Coder</p>
+    </header>
+    
+    <section id="about">
+      <h2>👋 About Me</h2>
+      <p>I'm a Web Designer and Coder passionate about creating stunning, user-friendly designs while blending functionality with creativity. I enjoy building websites and digital solutions that make ideas come alive.</p>
+    </section>
+    
+    <section id="skills">
+      <h2>💡 Skills</h2>
+      <ul class="skills">
+        <li>Photoshop</li>
+        <li>CorelDRAW</li>
+        <li>Logo Designing</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Creative Communication</li>
+      </ul>
+    </section>
+    
+    <section id="projects">
+      <h2>🚀 Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Designed and developed a responsive personal portfolio using HTML, CSS, and vibrant glassmorphism UI.</p>
+        </div>
+        <div class="project-card">
+          <h3>Logo Collection</h3>
+          <p>A creative collection of modern, minimalistic logos designed for startups and brands.</p>
+        </div>
+      </div>
+      <button class="add-project">➕ <span>Add Project</span></button>
+    </section>
+    
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:vikneshbbsc2025@gmail.com">vikneshbbsc2025@gmail.com</a></li>
+        <li>Phone: <a href="tel:+917904218678">7904218678</a></li>
+      </ul>
+    </section>
+    
+    <footer>
+      &copy; 2025 B. Viknesh. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
